@@ -19,7 +19,8 @@ header {}
 .name {position: fixed;
     float: left;}
 
-h1 {font-family: nMBold;}
+h1 {font-family: nMBold;
+    padding-left: 30px;}
 
 h2 {font-family: nMBold;}
 
@@ -46,7 +47,7 @@ div#container {position: static;
 aside#left {float: left;
         box-sizing: border-box;
         position: static;
-        padding-left: 200px;
+        padding-left: 30px;
         }
 aside#right {float: left;
         box-sizing: border-box;
@@ -81,6 +82,14 @@ nav {position: static;
         font-family: nMMedium;
     }
 
-    .p1 {
-        
-    }
+    ul.no-bullets {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    
+    div#container2 {position: static;
+            box-sizing: border-box;
+            float: left;
+            clear: both;
+            background-color: lightgray;}
