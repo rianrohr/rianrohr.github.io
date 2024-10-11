@@ -1,8 +1,27 @@
-body {}
+@font-face {
+    font-family: nMBold;
+    src: url(fonts/PPNeueMontreal-Bold.ttf);
+}
 
-h1 {}
+@font-face {
+    font-family: nMRegular;
+    src: url(fonts/PPNeueMontreal-Regular.ttf);
+}
 
-h2 {}
+@font-face {
+    font-family: nMMedium;
+    src: url(fonts/PPNeueMontreal-Medium.ttf);
+}
+
+body {font-family: nMRegular;}
+
+header {}
+.name {position: fixed;
+    float: left;}
+
+h1 {font-family: nMBold;}
+
+h2 {font-family: nMBold;}
 
 h3 {}
 
@@ -10,3 +29,58 @@ p {}
 
 img {}
 
+a:link {color: black;}
+a:visited {}
+a:hover {}
+a:active {}
+
+.landing {color: black;
+        text-decoration: none;
+        }
+
+div#container {position: static;
+        box-sizing: border-box;
+        padding-left: 50px;
+        font-family: nMRegular;
+        }
+aside#left {float: left;
+        box-sizing: border-box;
+        position: static;
+        padding-left: 200px;
+        }
+aside#right {float: left;
+        box-sizing: border-box;
+        position: static;
+        padding-left: 200px;
+        padding-right: 0px;
+        padding-top: 50px;
+        width: 600px;}   
+
+
+img {min-width: 400px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 20px;}
+nav {position: static;
+    box-sizing: border-box;
+    float: right;
+    word-spacing: 20px;
+    font-size: 18px;}
+
+    .intro {
+        display: flex;
+        justify-content: center; /* Horizontally center */
+        align-items: center; /* Vertically center */
+        text-align: center;
+    }
+    
+    .text {
+        width: 100%;
+        max-width: 700px; /* Limit the width of the text */
+        font-family: nMMedium;
+    }
+
+    .p1 {
+        
+    }
