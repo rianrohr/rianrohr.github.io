@@ -2,30 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hi, I'm Rianna!</title>
+    <title>Rianna Rohrbeck - Designer</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="class files/menu.js"></script>
+
+    <style>
+        article {display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+            padding-top: 50;
+            margin: 0 auto;
+            max-width: 800px;}
+
+        .profile-image {width: 100%;
+            height: auto;}
+
+        .text-content {}
+
+        
+    </style>
+
 </head>
 <body>
-    <div class="container">
+    <div id="main">
         <header>
-            <h1><a href="index.html" class="landing">Rianna Rohrbeck</a></h1>
+            <a href="index.html" style="text-decoration: none; color: black;">RIANNA ROHRBECK</a> 
             <nav>
-                <a href="index.html" class="landing"><span>Work</span></a>
-                <a href="#about" class="landing"><span>About</span></a>
-                <a href="Rianna Rohrbeck.pdf" target="_blank" class="landing">Resume</a>
-            </nav>
-            <a href="https://linkedin.com/in/rianna-rohrbeck" target="_blank">Linkedin</a>
-            <a href="https://github.com/rianrohr" target="_blank">Github</a>
-        </header> 
+                <div class="dropdown">
+                    <!--Hidden Buttons-->
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">work</a>
+                        <a href="about.html">about me</a>
+                        <a href="Rianna Rohrbeck.pdf" target="_blank">resume</a>
+                        <a href="contactForm.html">contact</a>
+                    </div>
+                </div> <!-- End of Drop Down-->
+                <button onclick="myFunction();" class="dropbtn">
+                    <div class="hamburger-icon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </button>
+            </nav> <!-- End of Nav -->
+        </header>
 
-        <aside id="left">
-            <img src="" alt="photo of me">
-        </aside>
-        <aside id="right">
-            <h2>It's nice to meet you!</h2>
-            <p>Welcome to my page! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rem dolore harum alias ab, vel obcaecati veritatis ipsum natus quam facilis vitae amet unde, et perspiciatis voluptate, maxime maiores molestias. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem doloremque, temporibus inventore consectetur rem incidunt sint eius, sit repudiandae enim laudantium consequatur aspernatur error distinctio optio. Non, perferendis sit.</p> 
-        </aside>
-    </div> <!--End of Container-->
+        <article>
+            <img src="aboutMe.jpeg" alt="friends" class="centered" class="profile-image">
+            <div class="text-content">
+            <h2>Hey there!</h2>
+            <p>You've gotten this far, and now I would consider us friends. It's nice to meet you! I'm a designer passionate about creating functional yet beautiful solutions to improve everyday experiences. I'm currently a student at DePaul University where I study user experience design. I strive to develop a design foundation that covers multiple disciplines of design so that I can be equipped to tackle problems with a variety of approaches, optimizing the resolution.</p>
+            </div>
+        </article>
+    </div> <!--End of Main-->
 </body>
-</html>
+</html> 
